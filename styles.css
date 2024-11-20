@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Permanent+Marker&family=Roboto:wght@500&display=swap');
+
+* {
+	font-family: sans-serif;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: lightblue;
+}
+.timers-container{
+	display: flex;
+	justify-content: space-around;
+}
+.countdown-container {
+	display: flex;
+	flex-direction: column;
+
+}
+.inputs-box{
+	display: flex;
+	justify-content: space-around;
+}
+.btn-box{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.countdown-container, .pomodoro-container{
+	background-color: blueviolet;
+	padding: 20px;
+	text-align: center;
+}
+
+.pomodoro-container{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	
+	
+}
