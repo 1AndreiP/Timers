@@ -7,60 +7,47 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Current Date and Time</h1>
-    <p id="datetime"></p>
-
-    <script src="index.js"></script>
-    <!DOCTYPE html> 
-<html lang="en"> 
-	<h1 style="color:black"> 
-		Pomodoro Timer
-	</h1> 
-	<div class="main"> 
-		<div class="timer-circle"
-			id="timer">15:00 
-		</div> 
-		<div class="control-buttons"> 
-			<button onclick="togglePauseResume()"> 
-				Pause 
-			</button> 
-			<button onclick="restartTimer()"> 
-				Restart 
-			</button> 
-			<button onclick="chooseTime()"> 
-				Choose Time 
-			</button> 
-            <script src="index.js"></script>
-		</div> 
-	</div>  
-</html>
-
-  <div class="container">
-    <div class="timer"></div>
-    <h1>Countdown</h1>
-    <div class="box">
-        <div class="display">
-            <p id="days">00</p>
-            <input type="number" name="d" id="d" min="0" value=""> 
+  <div class="timers-container">
+    <div class="timer-box">
+      <h1>Pomodoro Timer</h1>
+      <div class="main">
+        <div class="timer-circle" id="timer">15:00</div>
+        <div class="control-buttons">
+          <button onclick="togglePauseResume()">Pause</button>
+          <button onclick="restartTimer()">Restart</button>
+          <button onclick="chooseTime()">Choose Time</button>
         </div>
-        <div class="display">
-            <p id="hours">00</p>
-            <input type="number" name="h" id="h" min="0" max="23" value=""> 
-        </div>
-        <div class="display">
-            <p id="minutes">00</p>
-            <input type="number" name="m" id="m" min="0" max="59" value="">
-        </div>
-        <div class="display">
-            <p id="seconds">00</p>
-            <input type="number" name="s" id="s" min="0" max="59" value=""> 
-        </div>
-        <div>
-            <div class="btnbox">
-                <button id="setTimerBtn">Set Timer</button>
-                <button id="startBtn" disabled>Start</button>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="timer-box">
+      <h1>Countdown Timer</h1>
+      <div class="container">
+        <div class="box">
+          <div class="display">
+            <p id="days">00</p>
+            <input type="number" id="d" min="0" placeholder="Days">
+          </div>
+          <div class="display">
+            <p id="hours">00</p>
+            <input type="number" id="h" min="0" max="23" placeholder="Hours">
+          </div>
+          <div class="display">
+            <p id="minutes">00</p>
+            <input type="number" id="m" min="0" max="59" placeholder="Minutes">
+          </div>
+          <div class="display">
+            <p id="seconds">00</p>
+            <input type="number" id="s" min="0" max="59" placeholder="Seconds">
+          </div>
+          <div class="btnbox">
+            <button id="setTimerBtn" onclick="setCountdown()">Set Timer</button>
+            <button id="startBtn" onclick="startCountdown()" disabled>Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
