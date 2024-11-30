@@ -1,4 +1,4 @@
-
+/* Your unchanged styles */
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -10,11 +10,17 @@ body {
 	background-color: #f4f4f4;
   }
   
+  /* Updated section: .timers-container for grid layout */
   .timers-container {
-	display: flex;
-	gap: 20px; 
+	display: grid; /* Changed to grid */
+	grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+	gap: 20px; /* Space between boxes */
+	justify-items: center; /* Center items */
+	width: 100%; /* Full width for layout */
+	padding: 20px;
   }
-
+  
+  /* Your original unchanged styles for boxes */
   .timer-box {
 	background: #ffffff;
 	border: 2px solid #ccc;
@@ -25,6 +31,18 @@ body {
 	text-align: center;
   }
   
+  /* Current Time (shared with timer-box width/style) */
+  .current-time {
+	background: #ffffff;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+  }
+  
+  /* Your unchanged styles for individual elements */
   .timer-circle {
 	font-size: 2em;
 	font-weight: bold;
@@ -36,6 +54,7 @@ body {
 	border: 4px solid #333;
 	border-radius: 50%;
   }
+  
   .control-buttons button,
   .btnbox button {
 	padding: 10px 20px;
@@ -53,6 +72,21 @@ body {
 	background: #0056b3;
   }
   
+  /* Stopwatch display style */
+  .stopwatch-display {
+	font-size: 2em;
+	font-weight: bold;
+	color: #333;
+	margin: 20px auto;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	border: 4px solid #333;
+	border-radius: 10px;
+	text-align: center;
+  }
+  
+  /* Unchanged styles for the Countdown Timer */
   .container {
 	display: flex;
 	flex-direction: column;
