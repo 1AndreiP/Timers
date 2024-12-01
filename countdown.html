@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="timers-container">
+      <!-- Pomodoro Timer Box -->
+      <div class="timer-box">
+        <h1>Pomodoro Timer</h1>
+        <div class="main">
+          <div class="timer-circle" id="timer">15:00</div>
+          <div class="control-buttons">
+            <button onclick="togglePauseResume()">Pause</button>
+            <button onclick="restartTimer()">Restart</button>
+            <button onclick="chooseTime()">Choose Time</button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Current Time Box -->
+      <div class="current-time">
+        <h1>Current Time</h1>
+        <h1 id="current-time-display">00:00:00</h1>
+      </div>
+    
+      <!-- Stopwatch Box -->
+      <div class="timer-box">
+        <h1>Stopwatch</h1>
+        <div class="stopwatch-display" id="stopwatch">00:00:00</div>
+        <div class="control-buttons">
+          <button onclick="startStopwatch()">Start</button>
+          <button onclick="pauseStopwatch()">Pause</button>
+          <button onclick="resetStopwatch()">Reset</button>
+        </div>
+      </div>
+    
+      <!-- Countdown Timer Box -->
+      <div class="timer-box">
+        <h1>Countdown Timer</h1>
+        <div class="container">
+          <div class="box">
+            <div class="display">
+              <p id="days">00</p>
+              <input type="number" id="d" min="0" placeholder="Days" />
+            </div>
+            <div class="display">
+              <p id="hours">00</p>
+              <input
+                type="number"
+                id="h"
+                min="0"
+                max="23"
+                placeholder="Hours"
+              />
+            </div>
+            <div class="display">
+              <p id="minutes">00</p>
+              <input
+                type="number"
+                id="m"
+                min="0"
+                max="59"
+                placeholder="Minutes"
+              />
+            </div>
+            <div class="display">
+              <p id="seconds">00</p>
+              <input
+                type="number"
+                id="s"
+                min="0"
+                max="59"
+                placeholder="Seconds"
+              />
+            </div>
+            <div class="btnbox">
+              <button id="setTimerBtn" onclick="setCountdown()">
+                Set Timer
+              </button>
+              <button id="startBtn" onclick="startCountdown()" disabled>
+                Start
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    

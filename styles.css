@@ -1,0 +1,123 @@
+/* Your unchanged styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f4f4f4;
+  }
+  
+  /* Updated section: .timers-container for grid layout */
+  .timers-container {
+	display: grid; /* Changed to grid */
+	grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+	gap: 20px; /* Space between boxes */
+	justify-items: center; /* Center items */
+	width: 100%; /* Full width for layout */
+	padding: 20px;
+  }
+  
+  /* Your original unchanged styles for boxes */
+  .timer-box {
+	background: #ffffff;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+  }
+  
+  /* Current Time (shared with timer-box width/style) */
+  .current-time {
+	background: #ffffff;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+  }
+  
+  /* Your unchanged styles for individual elements */
+  .timer-circle {
+	font-size: 2em;
+	font-weight: bold;
+	color: #333;
+	margin: 20px auto;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	border: 4px solid #333;
+	border-radius: 50%;
+  }
+  
+  .control-buttons button,
+  .btnbox button {
+	padding: 10px 20px;
+	margin: 10px 5px;
+	font-size: 1em;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background: #007bff;
+	color: #fff;
+  }
+  
+  .control-buttons button:hover,
+  .btnbox button:hover {
+	background: #0056b3;
+  }
+  
+  /* Stopwatch display style */
+  .stopwatch-display {
+	font-size: 2em;
+	font-weight: bold;
+	color: #333;
+	margin: 20px auto;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	border: 4px solid #333;
+	border-radius: 10px;
+	text-align: center;
+  }
+  
+  /* Unchanged styles for the Countdown Timer */
+  .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .display {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+  }
+  
+  .display p {
+	font-size: 1.5em;
+	margin-right: 10px;
+  }
+  
+  .display input {
+	padding: 5px;
+	font-size: 1em;
+	width: 60px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  .btnbox button {
+	background: #28a745;
+  }
+  
+  .btnbox button:hover {
+	background: #218838;
+  }
+  
